@@ -1,7 +1,7 @@
 # 絶対にやること!!
 
 ## このファイルを複製してlaravel9の環境を構築した場合
--git remove -vでfetch push先の確認
+-git remote -vでfetch push先の確認
 -リモートレポジトリの作成
 -fetch push先がlaravel9-demoだったら、それをgir remote removeで削除
 
