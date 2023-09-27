@@ -1,3 +1,31 @@
 .header_menu {
-    background-color: lightgray;
+    background-color: black;
+    text-align:center;
+    color:white;
+}
+
+.header_menu p{
+    display:inline-block;
+}
+
+.header_menu ul{
+    display:inline-block;
+}
+
+
+.header_menu li{
+    display:inline-block;
+    list-style: none;
+
+}
+
+.header_menu a{
+    text-decoration: none;
+    color:white;
+
+}
+
+.header_menu a:hover{
+    color:skyblue;
+
 }
