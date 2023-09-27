@@ -20,3 +20,23 @@ Route::get('/', function () {
 Route::get('/home',function() {
     return view('home');
 });
+
+Route::get('/merchandise',function() {
+    return view('merchandise');
+});
+
+Route::get('/classification',function() {
+    return view('classification');
+});
+
+Route::get('/quantity',function() {
+    return view('quantity');
+});
+
+Route::get('/number',function() {
+    return view('number');
+});
+
+Route::get('/label',function() {
+    return view('label');
+});
