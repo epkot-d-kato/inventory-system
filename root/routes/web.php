@@ -21,9 +21,12 @@ Route::get('/home',function() {
     return view('home');
 });
 
+
+
 Route::get('/merchandise',function() {
-    return view('merchandise');
+    return view('/merchandise/merchandise');
 });
+// Route::get('/merchandise/create',)
 
 Route::get('/classification',function() {
     return view('classification');
