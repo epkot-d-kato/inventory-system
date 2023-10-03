@@ -25,7 +25,8 @@ Route::get('/home',function() {
 
 
 
-Route::get('/merchandise',[MerchandiseController::class,'index']);
+Route::get('/merchandise/list',[MerchandiseController::class,'index']);
+Route::get('/merchandise/store',[MerchandiseController::class,'store']);
 
 Route::get('/classification',function() {
     return view('classification');

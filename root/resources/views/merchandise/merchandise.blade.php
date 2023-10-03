@@ -16,12 +16,12 @@
 
     <section class="main">
         <div class="menu">
-            <p>商品管理</p>
+            <h1>商品管理</h1>
             <ul>
-                <li>スタートメニュー</li>
+                <li><a href="/home">スタートメニュー</a></li>
                 <li>商品管理</li>
             </ul>
-            <p>商品登録</p>
+            <p><a href="/merchandise/add">商品登録</a></p>
             <p>アーカイブ管理</p>
             <input type="text">
             <button>検索</button>
@@ -33,7 +33,7 @@
                 <tr>
                     <th>商品番号</th>
                     <th>商品名</th>
-                    <th>>分類</th>
+                    <th>分類</th>
                     <th>価格</th>
                     <th>プラ</th>
                     <th>付記</th>
