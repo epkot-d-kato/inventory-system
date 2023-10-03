@@ -30,44 +30,44 @@
 
         <div class="DB">
             <table border="1">
-                <th>
-                <td>商品番号</td>
-                <td>商品名</td>
-                <td>分類</td>
-                <td>価格</td>
-                <td>プラ</td>
-                <td>付記</td>
-                <td>紙</td>
-                <td>付記</td>
-                <td>登録日</td>
-                <td>更新日</td>
-                <td>色</td>
-                <td>サイズ</td>
-                <td>変更</td>
-                <td>追加</td>
-                </th>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th>商品番号</th>
+                    <th>商品名</th>
+                    <th>>分類</th>
+                    <th>価格</th>
+                    <th>プラ</th>
+                    <th>付記</th>
+                    <th>紙</th>
+                    <th>付記</th>
+                    <th>登録日</th>
+                    <th>更新日</th>
+                    <th>色</th>
+                    <th>サイズ</th>
+                    <th>変更</th>
+                    <th>追加</th>
+                </tr>
+
+                @foreach($merchandises as $merchandise)
+                <tr>
+                    <td>{{$merchandise -> merchandise_number}}</td>
+                    <td>{{$merchandise -> merchandise_name}}</td>
+                    <td>{{$merchandise -> merchandise_classification}}</td>
+                    <td>{{$merchandise -> merchandise_price}}</td>
+                    <td>{{$merchandise -> merchandise_plastic}}</td>
+                    <td>{{$merchandise -> merchandise_plastic_notes}}</td>
+                    <td>{{$merchandise -> merchandise_paper}}</td>
+                    <td>{{$merchandise -> merchandise_paper_notes}}</td>
+                    <td>{{$merchandise -> created_at}}</td>
+                    <td>{{$merchandise -> updated_at}}</td>
+                    <td>{{$merchandise -> merchandise_color}}</td>
+                    <td>{{$merchandise -> merchandise_size}}</td>
                     <td><a href="">分類</a><br><a href="">価格</a><br><a href="">サイズ</a></td>
                     <td><a href="">画像</a><br><a href="">色</a><br><a href="">サイズ</a></td>
                 </tr>
+                @endforeach
             </table>
 
         </div>
-
-
 
     </section>
 

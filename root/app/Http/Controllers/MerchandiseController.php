@@ -15,8 +15,10 @@ class MerchandiseController extends Controller
      */
     public function index()
     {
-        //
+        $merchandises = Merchandise::all();
+        return view('/merchandise/merchandise', compact('merchandises'));
     }
+
 
     /**
      * Show the form for creating a new resource.

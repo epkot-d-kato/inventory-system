@@ -17,7 +17,16 @@ class MerchandiseFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'merchandise_number' => $this -> faker -> unique() -> randomNumber(),
+            'merchandise_name' => $this -> faker -> word,
+            'merchandise_classification' => $this -> faker -> word,
+            'merchandise_price' => $this -> faker -> numberBetween(100,10000),
+            'merchandise_plastic' => $this -> faker -> boolean,
+            'merchandise_plastic_notes' => $this -> faker -> word,
+            'merchandise_paper' => $this -> faker -> boolean,
+            'merchandise_paper_notes' => $this -> faker -> word,
+            'merchandise_color' => $this -> faker -> word,
+            'merchandise_size' => $this -> faker -> numberBetween(100,10000),
         ];
     }
 }

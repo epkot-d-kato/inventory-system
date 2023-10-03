@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MerchandiseController;
+use App\Models\Merchandise;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,10 +25,7 @@ Route::get('/home',function() {
 
 
 
-Route::get('/merchandise',function() {
-    return view('/merchandise/merchandise');
-});
-// Route::get('/merchandise/create',)
+Route::get('/merchandise',[MerchandiseController::class,'index']);
 
 Route::get('/classification',function() {
     return view('classification');

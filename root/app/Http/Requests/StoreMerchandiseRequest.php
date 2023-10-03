@@ -13,7 +13,7 @@ class StoreMerchandiseRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StoreMerchandiseRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'merchandise_number' => 'required',
+            'merchandise_name' => 'required',
+            'merchandise_classification' => 'required',
+            'merchandise_price' => 'required',
+            'merchandise_plastic' => 'required',
+            'merchandise_paper' => 'required',
+            'merchandise_color' => 'required',
+            'merchandise_size' => 'required',
         ];
     }
 }
