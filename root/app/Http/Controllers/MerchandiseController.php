@@ -50,7 +50,6 @@ class MerchandiseController extends Controller
             'merchandise_paper_notes' => $validateData['merchandise_paper_notes'],
             'merchandise_color' => $validateData['merchandise_color'],
             'merchandise_size' => $validateData['merchandise_size'],
-
         ]);
 
         $merchandise -> save();

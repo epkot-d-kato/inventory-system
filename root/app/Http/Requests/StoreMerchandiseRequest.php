@@ -28,10 +28,12 @@ class StoreMerchandiseRequest extends FormRequest
             'merchandise_name' => 'required',
             'merchandise_classification' => 'required',
             'merchandise_price' => 'required',
-            'merchandise_plastic' => 'required',
-            'merchandise_paper' => 'required',
             'merchandise_color' => 'required',
             'merchandise_size' => 'required',
+            'merchandise_plastic' => 'required', // プラチェックボックスのルール
+            'merchandise_plastic_notes' => 'required',
+            'merchandise_paper' => 'required', // 紙チェックボックスのルール
+            'merchandise_paper_notes' => 'required',
         ];
     }
 }
