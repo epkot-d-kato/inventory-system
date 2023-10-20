@@ -1,0 +1,19 @@
+.menu li{
+    display:inline-block;
+    list-style: none;
+}
+
+.menu li:not(:last-child):after {
+    content:'>';
+    margin: 0 5px;
+    color:lightgray;
+}
+
+.menu li:not(:first-child) {
+    color:lightgray;
+}
+
+.menu a {
+    text-decoration:none;
+    color:blue;
+}

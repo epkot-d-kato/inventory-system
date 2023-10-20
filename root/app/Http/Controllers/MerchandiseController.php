@@ -27,7 +27,7 @@ class MerchandiseController extends Controller
      */
     public function create()
     {
-        //
+        return view('/merchandise/create');
     }
 
     /**
@@ -38,7 +38,24 @@ class MerchandiseController extends Controller
      */
     public function store(StoreMerchandiseRequest $request)
     {
-        //
+        $validateData = $request -> validated();
+        $merchandise =  Merchandise::create([
+            'merchandise_number' => $validateData['merchandise_number'],
+            'merchandise_name' => $validateData['merchandise_name'],
+            'merchandise_classification' => $validateData['merchandise_classification'],
+            'merchandise_price' => $validateData['merchandise_price'],
+            'merchandise_plastic' => $validateData['merchandise_plastic'],
+            'merchandise_plastic_notes' => $validateData['merchandise_plastic_notes'],
+            'merchandise_paper' => $validateData['merchandise_paper'],
+            'merchandise_paper_notes' => $validateData['merchandise_paper_notes'],
+            'merchandise_color' => $validateData['merchandise_color'],
+            'merchandise_size' => $validateData['merchandise_size'],
+
+        ]);
+
+        $merchandise -> save();
+        return redirect('/merchandise/list');
+
     }
 
     /**

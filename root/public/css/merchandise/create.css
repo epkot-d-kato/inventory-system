@@ -1,0 +1,12 @@
+.main li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.main {
+    list-style: none;
+}
+
+/* .submit {
+    display: none;
+} */
